@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート | コメントリーダー</title>
+<style>
+:root { color-scheme: light dark; --text: #1d1d1f; --muted: #6e6e73; --bg: #ffffff; --link: #0066cc; }
+@media (prefers-color-scheme: dark) { :root { --text: #f5f5f7; --muted: #a1a1a6; --bg: #1d1d1f; --link: #4da3ff; } }
+body { margin: 0; background: var(--bg); color: var(--text);
+       font: 16px/1.8 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 1.6em; line-height: 1.4; }
+h2 { font-size: 1.15em; margin-top: 2em; }
+h3 { font-size: 1em; margin-top: 1.5em; }
+code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.9em; padding: 2px 4px; border-radius: 4px;
+       background: rgba(127, 127, 127, 0.15); word-break: break-all; }
+a { color: var(--link); }
+nav { font-size: 0.9em; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="support.html">サポート</a> ｜ <a href="privacy-policy.html">プライバシーポリシー</a> ｜ <a href="licenses.html">ライセンス・クレジット</a></nav>
+<h1>サポート</h1>
+<p>「コメントリーダー」は、音声プラットフォーム「Voicy」の放送に寄せられたコメントを、画面を見ずに音声で聞いたり、集計したりするためのアプリです。本アプリは株式会社Voicyとは関係のない非公式のアプリです。</p>
+<h2>お問い合わせ</h2>
+<p>不具合のご報告やご質問は、次の連絡先までお願いします。</p>
+<p>メール：<a href="mailto:snagasawa@gfesystems.info">snagasawa@gfesystems.info</a></p>
+<h2>よくある質問</h2>
+<h3>コメントが表示されない</h3>
+<p>アプリ内のブラウザでVoicyの放送ページを開くと、コメントを読み込みます。Voicyのページは表示に時間がかかることがあるため、しばらく待つか、再読み込みしてください。</p>
+<h3>放送を聴きたい</h3>
+<p>スマートフォン版では、放送の再生はVoicy公式アプリで行ってください。本アプリ内では放送を再生しません。「Voicyアプリで聴く」を押すと、Voicyアプリでその放送が開きます。</p>
+<h3>ログインできない</h3>
+<p>Googleは、アプリ内のブラウザでのログインを制限しているため、途中で先に進めない場合があります。その場合は、Apple・LINE・メールアドレスなど、他の方法でログインしてください。公開されている放送とコメントは、ログインしなくても読み上げられます。</p>
+<h3>読み方がおかしい</h3>
+<p>設定の「読み方辞書」に、表記と読み（ひらがな・カタカナ）を登録すると、登録した読み方で読み上げます。リスナー名にも使えます。</p>
+<h3>保存したデータを消したい</h3>
+<p>集計画面の「放送一覧」から、放送ごとに保存したコメントを削除できます。アプリを削除すると、保存したデータはすべて削除されます。</p>
+<h2>VOICEVOXで読み上げる（任意）</h2>
+<p>コメントの読み上げは、OS標準の音声だけで使えます。VOICEVOXは、読み上げの声を変えたい方向けの機能で、パソコンの操作が必要です。</p>
+<p>パソコンでVOICEVOXを起動し、スマートフォンから同じWi-Fi経由で接続して音声を作ります。パソコンとスマートフォンを同じWi-Fiにつなぎ、使う間はパソコンを起動しておいてください。</p>
+<h3>1. VOICEVOXをインストールする</h3>
+<p>VOICEVOXの公式サイトからダウンロードして、インストールします。</p>
+<ul>
+<li>VOICEVOX 公式サイト：<a href="https://voicevox.hiroshiba.jp/">https://voicevox.hiroshiba.jp/</a></li>
+</ul>
+<p>インストールしたら一度起動して、声が出ることを確かめてから、VOICEVOXを終了します。</p>
+<h3>2. ほかの端末から接続できるように起動する</h3>
+<p>VOICEVOXを普通に起動すると、そのパソコンからしか接続できません。スマートフォンから接続するには、VOICEVOXを終了した状態で、次のコマンドで音声合成の部分（エンジン）だけを起動します。</p>
+<p>Windows（PowerShellで実行）：</p>
+<p><code>&amp; "$env:LOCALAPPDATA\Programs\VOICEVOX\vv-engine\run.exe" --host 0.0.0.0</code></p>
+<p>Mac（ターミナルで実行）：</p>
+<p><code>/Applications/VOICEVOX.app/Contents/Resources/vv-engine/run --host 0.0.0.0</code></p>
+<ul>
+<li>インストール先を変えた場合は、VOICEVOXのフォルダ内の「vv-engine」にある「run」（Windowsは「run.exe」）を指定してください。</li>
+<li>ファイアウォールの確認が表示されたら、接続を許可してください（Windowsでは「プライベートネットワーク」を選びます）。</li>
+<li>使っている間は、コマンドを実行した画面を閉じないでください。終了するときは、その画面で Ctrl＋C を押します。</li>
+<li>この起動方法では、同じネットワーク上のほかの端末からも接続できる状態になります。自宅など信頼できるネットワークでだけ使い、公共のWi-Fiでは使わないでください。</li>
+</ul>
+<h3>3. パソコンのIPアドレスを調べる</h3>
+<ul>
+<li>Windows：PowerShellで <code>ipconfig</code> を実行し、「IPv4 アドレス」を確認します（例：192.168.1.10）。</li>
+<li>Mac：「システム設定」→「Wi-Fi」→ 接続中のネットワークの「詳細」で、「IPアドレス」を確認します。</li>
+</ul>
+<h3>4. アプリで接続する</h3>
+<ol>
+<li>アプリの「設定」で、読み上げエンジンを「VOICEVOX」にします。</li>
+<li>「エンジンURL」に <code>http://（パソコンのIPアドレス）:50021</code> を入力します（例：<code>http://192.168.1.10:50021</code>）。</li>
+<li>「接続確認」を押し、接続できたら「話者」を選びます。</li>
+</ol>
+<p>iPhoneでは、初めて接続するときに「ローカルネットワーク上のデバイスの検出と接続」の許可を求められるので、許可してください。</p>
+<p>パソコンがスリープしたり、Wi-Fiから離れたりしてVOICEVOXに接続できないときは、自動的にOS標準の音声で読み上げを続けます。</p>
+<p>VOICEVOXの音声は、VOICEVOXと各キャラクターの利用規約に従ってご利用ください。</p>
+</main>
+</body>
+</html>
